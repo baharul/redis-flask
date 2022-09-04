@@ -7,8 +7,8 @@ pipeline {
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${TASK_DEFINITION_NAME}"
         AWS_VPC="\"awsvpcConfiguration={subnets=[subnet-03063e1a4ef70b9ac],securityGroups=[sg-0e38e57c68c2eb124],assignPublicIp=ENABLED}\""
         FARGATE_CLUSTER_NAME="op-d02-cluster"
-        TASK_DEFINITION_NAME="flask-cache-redis_api"
-        TASK_DEFINITION_REVISION="4" 
+        TASK_DEFINITION_NAME="redis-flask"
+        TASK_DEFINITION_REVISION="1" 
     }
 
 
